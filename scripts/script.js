@@ -15,7 +15,7 @@ function createGrid(gridSize) {
         gridElem.style.border = '1px black solid';
     
         gridElem.addEventListener('mouseover', (Event) => {
-            Event.target.style.backgroundColor = 'green';
+            Event.target.style.backgroundColor = `rgb(${Math.random() * 225}, ${Math.random() * 255}, ${Math.random() * 255})`;
         });
         grid.appendChild(gridElem);
     }
